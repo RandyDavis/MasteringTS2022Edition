@@ -2,11 +2,14 @@ function square(num: number) {
   return num * num
 }
 
-square(3)
-
 function greet(person: string) {
   return `Hello, ${person}!`
 }
 
-greet(4)
+const doSomething = (person: string, age: number, isFunny: boolean) => {
+  return `${person} is ${age} and is ${isFunny ? 'funny' : 'not funny'}.`
+}
+
+square(3)
 greet('Max')
+doSomething('Max', 30, true)
